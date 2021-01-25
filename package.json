@@ -1,20 +1,29 @@
 {
-  "name": "site_vue3",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  },
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "dependencies": {
-    "axios": "^0.21.1",
-    "vue": "^3.0.4",
-    "vue-router": "^4.0.3"
+    "@koa/cors": "^3.1.0",
+    "koa": "^2.13.1",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {
-    "@vue/compiler-sfc": "^3.0.4",
-    "compression-webpack-plugin": "^5.0.2",
-    "node-sass": "^5.0.0",
-    "sass": "^1.32.4",
-    "vite": "^1.0.0-rc.13"
-  }
+    "@koa/router": "^10.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^8.5.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-log4": "^2.3.2",
+    "koa-router": "^10.0.0",
+    "mime": "^2.4.7",
+    "mysql2": "^2.2.5",
+    "socket.io": "^3.0.5"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
